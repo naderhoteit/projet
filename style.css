@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  .about-us {
+    background-color: #eee;
+    padding: 150px 0;
+  }
+  
+  .about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .services-title{
+    font-size: xx-large;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .service-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .service-icon {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  
+  .service-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .service-description {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+    
+  }
+  
+  .social-icons img {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .ic{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  @media only screen and (max-width: 767px) {
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     
+    }
+  
+    nav {
+      margin-top: 20px;
+    }
+  
+    nav ul li {
+      margin-right: 10px;
+    }
+  
+    .about-us {
+      text-align: center;
+    }
+  
+    .services-list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .service-item {
+      width: 45%;
+    }
+  
+  }
+
+  @media screen and (max-width: 480px) {
+    .service-item {
+      width: 100%;
+    }
+  }
+
+.contact-us {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+  }
+  
+  .contact-us .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-us .section-subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-us .form-group {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .contact-us .form-group input,
+  .contact-us .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .contact-us .form-group input:focus,
+  .contact-us .form-group textarea:focus {
+    outline: none;
+    border-color: #444;
+  }
+  
+  .contact-us button[type="submit"] {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-us button[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .contact-us .section-subtitle {
+      margin-bottom: 30px;
+    }
+  
+    .contact-us .form-group input,
+    .contact-us .form-group textarea {
+      padding: 10px;
+    }
+  
+    .contact-us button[type="submit"] {
+      padding: 10px 20px;
+    }
+  }
+  
+
+  
+  
